@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/3450300d68.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+            <ul class="menu" id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div data-aos="slide-down">
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Alako</span><br>Abdulmummin from <span>Nigeria.</span></h1>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!--about-->
+    
+    <div id="about">
+        <div class="container">
+            <div data-aos="fade-up">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/alako.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a highly motivated and enthusiastic Web Developer with strong academic background in Computer Science. 
+                    Possessing a key eye for detail and passion for problem solving, I am eager to bring my technical skills & team-oriented 
+                    approach to a dynamic software development environment. I have experience with software and have successfully finished a 
+                    number of online software and data analytics training courses as well as developer certifications in areas like Web Design, 
+                    JavaScript Algorithm, Data Structures, etc.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('soft-skills')">Soft Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>HTML<span>.</span></li>
+                            <li>CSS<span>.</span></li>
+                            <li>JavaScript<span>.</span></li>
+                            <li>React<span>.</span></li>
+                            <li>Bootstrap<span>.</span></li>
+                            <li>Microsot Office<span>.</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="soft-skills">
+                        <ul>
+                            <li>Adaptability<span>.</span></li>
+                            <li>Communication<span>.</span></li>
+                            <li>Creativity<span>.</span></li>
+                            <li>Time Management<span>.</span></li>
+                            <li>Team Work<span>.</span></li>
+                            <li>Problem Solving<span>.</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>May 2021 - October 2021</span><br>Web Developer Intern<span>.</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2017 - 2022</span><br>Studied Computer Science at Federal University Lokoja<span>.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!--services-->
+    <div id="services">
+        <div class="container">
+            <div data-aos="fade-up">
+            <h1 class="sub-title">My Services</h1>
+            </div>
+            <div data-aos="zoom-in">
+            <div class="services-list">
+                <div>
+                    <i class="fa fa-search"></i>
+                    <h2>Website Development</h2>
+                    <p>This involves in developing a website for the internet for specific purposes.</p>
+                </div>
+                <div>
+                    <i class="fa fa-laptop-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web Design refers to the design of websites that are displayed on the internet.</p>
+                </div>
+                <div>
+                    <i class="fa fa-palette"></i>
+                    <h2>Web Application</h2>
+                    <p>Web Application or Web App is an application software that is accessed using a web browser.</p>
+                </div>
+                <div>
+                    <i class="fa fa-refresh"></i>
+                    <h2>Website maintenance</h2>
+                    <p>Providing website maintenance and making enhancements when required.</p>
+                </div>
+                <div>
+                    <i class="fa fa-mobile-alt"></i>
+                    <h2>Mobile Design</h2>
+                    <p>Designing and implementing website/web app for the smallest screen sizes.</p>
+                </div>
+                <div>
+                    <i class="fa fa-bullhorn"></i>
+                    <h2>Web Hosting</h2>
+                    <p>Website hosting services provide the ability to launch your site on the internet. </p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!--portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <div data-aos="fade-down">
+            <h1 class="sub-title">My Work</h1>
+            </div>
+            <div class="work-list">
+                <div data-aos="fade-up">
+                <div class="work">
+                    <img src="images/Screenshot 2023-03-09 123656.png">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>I designed a calculator web app. Basic arithmetic operations like addition, 
+                        subtraction, multiplication, and division can be carried out with it. I solely 
+                        used HTML, CSS and JavaScript to create it.</p>
+                        <a href="https://codespaces-blank-rouge.vercel.app/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                </div>
+
+                <div data-aos="fade-up">
+                <div class="work">
+                    <img src="images/dig-clock.png">
+                    <div class="layer">
+                        <h3>Digital Clock</h3>
+                        <p>I designed a digital clock web app. It displays time in hours, minutes and seconds. 
+                        This tool was created using HTML, CSS, and JavaScript.</p>
+                        <a href="https://dig-clock.vercel.app/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                </div>
+
+                <div data-aos="fade-up">
+                <div class="work">
+                    <img src="images/Screenshot (381).png">
+                    <div class="layer">
+                        <h3>Random Quote Generator</h3>
+                        <p>I created a website application that produces random quotes. It enables 
+                        users to copy and tweet a specific quotation. It also enables the user to hear how a quote
+                        was said.</p>
+                        <a href="https://quotes-lyart.vercel.app/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <a href="https://vercel.com/sirkish" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!--contact-->
+    <div data-aos="fade-up">
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> alakoademola2001@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> +2348120248079</p>
+                    <div class="social-icons">
+                        <a href="https://web.facebook.com/sirkish.ademola"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/mumaizor_fcb?t=FkNKpaaXUc7pq4rAMNCERA&s=09"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.linkedin.com/in/alako-abdulmummin-713877229"><i class="fa fa-linkedin-square"></i></a>
+                    </div>
+                    <a href="images/MY CV.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg">.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright (c) Alako. Made with <i class="fas fa-heart"></i></p>
+        </div>
+    </div>
+</div>
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+    function opentab(tabname) {
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script> 
+  
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+  </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwWM6mGvn2syUvx95rLON0Mt0P7mvxniTr3yI_aL_KhtA4eDL6ZbHP2jo0BLKnLlZcEeg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent succesfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<script>
+AOS.init();
+
+// You can also pass an optional settings object
+// below listed default settings
+AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 1500, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: true, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+</script>
+
+</body>
+</html>
